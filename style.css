@@ -1,0 +1,698 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+table,
+th,
+td,
+embed,
+object {
+ padding: 0;
+ margin: 0;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+ border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th,
+var {
+ font-weight: normal;
+ font-style: normal;
+}
+
+ul {
+ list-style: none;
+}
+
+caption,
+th {
+ text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-size: 1.0em;
+}
+
+q:before,
+q:after {
+ content: '';
+}
+
+a,
+ins {
+ text-decoration: none;
+}
+
+
+
+
+* {
+ margin: 0;
+ padding: 0;
+ color: black;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+
+
+@font-face {
+ font-family: "antonio";
+ src: url("https://cats-shelter.ucoz.club/Antonio-VariableFont_wght.ttf");
+}
+
+/* @font-face {
+ font-family: "anton";
+ src: url("../fonts/anton/Anton-Regular.ttf");
+} */
+
+
+.header {
+ width: 1450px;
+ height: 225px;
+ background: rgba(255, 255, 255, 0.315);
+ display: flex;
+ backdrop-filter: blur(9px);
+ text-shadow: rgb(116, 59, 143) 0px 0px 5px;
+ /* border-radius: 7px */
+}
+
+.site-block {
+ width: 1450px;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+}
+
+
+
+.logotype {
+ height: 225px;
+ width: auto;
+ padding: 9px;
+}
+
+.name {
+ width: 1020px;
+ height: 200px;
+ text-align: center;
+ font-size: 160px;
+ color: rgb(255, 0, 200);
+ font-family: "Antonio";
+
+}
+
+/*меню*/
+.menu {
+
+ /*отступ сверху*
+/margin-top:75px;
+
+/*убираем подчеркивание текста ссылок*/
+ text-decoration: none;
+ /*убираем маркеры списка*/
+ list-style-type: none;
+
+ height: 45px;
+ background-color: rgb(0, 0, 0);
+ padding-left: 25px;
+ min-width: 470px;
+ display: flex;
+ justify-content: space-around;
+}
+
+/*реализуем выпадающее меню*/
+.menu li:hover ul {
+ display: block;
+}
+
+.menu ul li {
+ float: none;
+}
+
+/* .menu li:hover {
+ background-color: rgba(194, 136, 136, 0.671);
+} */
+
+
+.menu ul li:hover {
+ background-color: rgba(88, 88, 88, 0.205);
+}
+
+
+
+/*параметры меню*/
+.menu ul {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+ display: none;
+ background-color: rgba(155, 155, 155, 0.569);
+ position: absolute;
+ top: 100%;
+ z-index: 999999;
+ backdrop-filter: blur(5px);
+}
+
+
+.menu li {
+ float: left;
+ position: relative;
+ height: 100%;
+}
+
+
+
+.menu li a {
+ display: inline-block;
+ /*Делаем элементы списка строчно-блочными. Они располагаются по горизонтали*/
+ padding: 13px;
+ width: 200px;
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ text-align: center;
+ font-family: "Antonio";
+}
+
+.menu a:hover {
+ color: #ffee00;
+
+}
+
+.block-content {
+ width: 1450px;
+ height: 800px;
+ padding: 0px;
+
+}
+
+.block-content hr {
+ margin-top: 25px;
+ border-radius: 20px;
+}
+
+.slider {
+ width: 1450px;
+ height: 300px;
+
+}
+
+.block-right {
+ background: rgb(0, 0, 0);
+ width: 725px;
+ height: 600px;
+ float: right;
+ /* backdrop-filter: blur(9px); */
+}
+
+.content-img {
+ margin-bottom: 25px;
+ margin-top: 25px;
+ width: 500px;
+ height: 300px;
+ border-radius: 12px;
+ pointer-events: none;
+ /* запрет на перетаскивание */
+}
+
+
+
+.block-left {
+ background: rgb(0, 0, 0);
+ width: 725px;
+ height: 600px;
+ padding: 5px;
+ float: left;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* backdrop-filter: blur(9px); */
+ /* border: solid; */
+ /* outline: thick double #32a1ce; */
+
+}
+
+.block-left h2,
+em {
+ padding: 15px 20px;
+ color: #ffee00;
+
+}
+
+.block-left p {
+ color: #ffffff;
+ letter-spacing: 3px;
+ padding: 15px 20px;
+ font-size: 20px;
+ line-height: 20px;
+ text-align: left;
+ text-indent: 25px;
+}
+
+.video {
+ padding: 25px;
+ width: 725px;
+ height: 600px;
+}
+
+
+
+
+
+.block-news {
+ background: rgb(0, 0, 0);
+ max-width: 1450px;
+ padding: 0 20px;
+}
+
+
+
+.news-name {
+ color: #fff;
+ font-size: 35px;
+ padding-left: 20px;
+}
+
+.news-p {
+ list-style: none;
+ padding: 20px;
+ margin: 0;
+ color: #fff;
+}
+
+.news-p li {
+ margin-bottom: 30px;
+ border-bottom: 1px solid rgb(204, 204, 204);
+ padding-bottom: 20px;
+ display: flex;
+ align-items: center;
+}
+
+.news-p li:last-child {
+ margin-bottom: 0;
+ border-bottom: none;
+ padding-bottom: 0;
+}
+
+.news-p li img {
+ margin-right: 20px;
+ flex: 0 0 150px;
+ height: 150px;
+}
+
+.news-content1 {
+ flex: 1;
+}
+
+.news-content1 h2 {
+ font-size: 24px;
+ margin-bottom: 10px;
+ color: #ffffff;
+}
+
+.news-content1 p {
+ font-size: 18px;
+ line-height: 1.5;
+ margin-bottom: 0;
+ color: #ffffff;
+}
+
+
+.slide {
+ width: 1450px;
+ height: 450px;
+
+
+
+ position: relative;
+ text-align: center;
+}
+
+.slide input {
+ display: none;
+}
+
+.slide input+label {
+ display: inline-block;
+ width: 10px;
+ height: 10px;
+ border-radius: 8px;
+ background: rgba(90, 90, 90, 0.8);
+ border: 2px solid rgba(190, 190, 190, 0.8);
+ cursor: pointer;
+ z-index: 100;
+ position: relative;
+ margin-right: 4px;
+ top: 90%;
+ transition: background 0.8s ease-out 0s;
+}
+
+.slide input+label:hover {
+ background: rgba(250, 250, 250, 0.8);
+}
+
+.slide input:checked+label {
+ background: rgba(220, 220, 220, 0.8);
+}
+
+.slide div {
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ right: 0px;
+ bottom: 0px;
+ z-index: 0;
+}
+
+.slide div {
+ visibility: hidden;
+ opacity: 0;
+ transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.slide img {
+ width: 1450px;
+ height: 450px;
+}
+
+.slide input:checked+label+div {
+ visibility: visible;
+ opacity: 1;
+ transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.infp2 h2 {
+ margin: 25px;
+}
+
+.infp2 a {
+ text-decoration: none;
+
+}
+
+.infp2 :hover a {
+ color: #9900ff;
+}
+
+
+h1 {
+ margin: 0;
+ font-size: 36px;
+}
+
+.container {
+ max-width: 1450px;
+ margin: 0 auto;
+ padding: 20px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.cat-card {
+ background-color: rgba(249, 249, 249, 0.411);
+ border-radius: 10px;
+ box-shadow: 0px 0px 5px rgb(20, 20, 20);
+ margin: 20px;
+ padding: 20px;
+ width: 300px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ backdrop-filter: blur(9px);
+ z-index: 1;
+}
+
+.cat-card img {
+ max-width: 200px;
+ border-radius: 50%;
+ margin-bottom: 10px;
+ max-height: 200px;
+ box-shadow: 0px 0px 5px rgb(20, 20, 20);
+ pointer-events: none;
+ /* запрет на перетаскивание */
+}
+
+.cat-card h2 {
+ font-size: 24px;
+ margin: 0;
+}
+
+.cat-card p {
+ margin-top: 10px;
+ text-align: center;
+}
+
+.button {
+ background-color: #333;
+ color: #fff;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-top: 10px;
+ font-size: 16px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ transition: background-color 0.3s ease;
+}
+
+.button:hover {
+ background-color: #666666;
+}
+
+
+/* страница about */
+
+.block-about h1 {
+ padding-top: 17px;
+ text-align: center;
+}
+
+.block-about p {
+ letter-spacing: 3px;
+ padding-top: 17px;
+ font-size: 20px;
+ line-height: 40px;
+ text-align: left;
+ text-indent: 25px;
+ word-spacing: 10px;
+
+}
+
+
+
+
+/* пожертвования */
+.donation {
+ background-color: rgba(249, 249, 249, 0.616);
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(6px);
+}
+
+.donation h1 {
+ margin-top: 0;
+ font-size: 24px;
+}
+
+.donation form {
+ display: flex;
+ flex-direction: column;
+ max-width: 400px;
+}
+
+.donation label {
+ margin-bottom: 5px;
+}
+
+.donation input[type="number"],
+.donation input[type="text"],
+.donation input[type="email"],
+.donation textarea {
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+
+.donation button {
+ padding: 10px;
+ background-color: #f8abff;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.donation button:hover {
+ background-color: #f8abff;
+}
+
+
+
+
+body {
+ background-image: url(https://cats-shelter.ucoz.club/8196145.jpg);
+ /* background:rgb(255, 255, 255); */
+ /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+ /* градиент */
+ /* background-image: url("8196145.jpg"); */
+ /* background: linear-gradient(to top, rgb(0, 0, 0), 45%, cyan); */
+ /* background-color: rgb(51, 51, 51); */
+ background-attachment: fixed;
+ background-size: cover;
+ background-repeat: no-repeat;
+ /* background-repeat: ; */
+ /* повторение по вертикали */
+
+ /* вертикальная полоса прокрутки добавляется только при необходимости */
+}
+
+body {
+ opacity: 0;
+ animation: ani 1s forwards;
+}
+
+@keyframes ani {
+ 0% {
+ opacity: 0;
+ }
+
+ 100% {
+ opacity: 1;
+ }
+}
+
+.git img {
+ height: 35px;
+}
+
+
+.disc img {
+ height: 35px;
+}
+
+.footer p {
+ color: rgb(255, 255, 255);
+ letter-spacing: 2px;
+}
+
+.footer {
+ width: 1450px;
+ height: 100px;
+ background: rgba(0, 0, 0, 0.74);
+ color: rgb(255, 255, 255);
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ /* flex-direction: row; */
+ /* filter: blur(1px); размытие */
+ /* filter: opacity(70%); */
+ /* устанавливает непрозрачность элемента */
+ /* border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px; */
+ backdrop-filter: blur(6px);
+ font-family: "Antonio";
+}
+
+.container2 {
+ margin: 0 auto;
+ max-width: 960px;
+ padding: 0 20px;
+}
+
+.container2 h1 {
+ text-align: center;
+ padding: 25px;
+}
+
+.news-list {
+ list-style: none;
+ padding: 20px;
+ margin: 0;
+}
+
+.news-list li {
+ margin-bottom: 30px;
+ padding-bottom: 20px;
+ display: flex;
+ align-items: center;
+ border-radius: 20px;
+ background-color: #9797972f;
+ backdrop-filter: blur(6px);
+ box-shadow: 10px 10px 10px rgba(146, 146, 146, 0.5);
+
+}
+
+.news-list li:last-child {
+ margin-bottom: 0;
+ border-bottom: none;
+ padding-bottom: 0;
+}
+
+.news-list li img {
+ margin: 20px;
+ flex: 0 0 150px;
+ height: 150px;
+}
+
+.news-content {
+ flex: 1;
+}
+
+.news-content h2 {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+
+.news-content p {
+ font-size: 18px;
+ line-height: 1.5;
+ margin-bottom: 0;
+}
